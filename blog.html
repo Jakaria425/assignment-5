@@ -5,13 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- tailwind and daisy-ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- front -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .lexend {
+            font-family: "Lexend", sans-serif;
+
+        }
+
+        .btn-text {
+            color: rgb(17, 17, 17);
+            font-size: 20px;
+            font-weight: 600;
+            background: #B4F461;
+        }
+        .h-boder{
+            border: 1px solid rgba(17, 17, 17, 0.1);
+        }
+    </style>
 </head>
 
 <body>
-    <header>
+    <header class="h-36 w-full lg:px-48 px-10 bg-[#F9F7F3] flex justify-between items-center gap-2 ">
+        <a href="index.html"><button class="btn px-8 btn-text lexend ">Home</button></a>
+        
+        <div class="flex gap-4 items-center ">
+            <img class="h-[48px] hidden md:block" src="assets/logo.png" alt="">
+            <h3 class="text-[20px]">Donate Bangladesh</h3>
+        </div>
+        <div class="flex gap-4 items-center ">
+            <img class=" hidden md:block" src="assets/coin.png" alt="">
+            <h3><span>10000</span> BDT</h3>
+        </div>
         
     </header>
-    <main></main>
+    <main class="max-w-[1240px] mx-auto">
+        <h1 class="font-bold text-2xl my-7">Importent FAQ ?</h1>
+        <div class="h-36 rounded-lg h-boder p-5 ">
+            <h2 class="text-xl font-bold mb-3">What is the Document Object Model (DOM)?</h2>
+            <h4>What is the Document Object Model (DOM)?</h4>
+        </div>
+        <div class="h-36 rounded-lg h-boder p-5 mt-3 ">
+            <h2 class="text-xl font-bold mb-3">How do you select an element from the DOM?</h2>
+            <h4>What is the Document Object Model (DOM)?</h4>
+        </div>
+        <div class="h-36 rounded-lg h-boder p-5 mt-3 ">
+            <h2 class="text-xl font-bold mb-3">What is event delegation in the context of the DOM, and why is it useful?</h2>
+            <h4>What is the Document Object Model (DOM)?</h4>
+        </div>
+        <div class="h-36 rounded-lg h-boder p-5 mt-3 ">
+            <h2 class="text-xl font-bold mb-3">How do you manipulate an element's attributes and styles using the DOM?</h2>
+            <h4>What is the Document Object Model (DOM)?</h4>
+        </div>
+    </main>
     <footer></footer>
 </body>
 
