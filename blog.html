@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Bangladesh</title>
+    <title>Blog</title>
     <!-- tailwind and daisy-ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -45,24 +45,44 @@
         </div>
         
     </header>
-    <main class="max-w-[1240px] mx-auto">
+    <main class="max-w-[1240px] flex flex-col gap-5 mx-auto">
         <h1 class="font-bold text-2xl my-7">Importent FAQ ?</h1>
-        <div class="h-36 rounded-lg h-boder p-5 ">
-            <h2 class="text-xl font-bold mb-3">What is the Document Object Model (DOM)?</h2>
-            <h4>What is the Document Object Model (DOM)?</h4>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>Document Object Model (DOM) is a structural blueprint of a web page.
+                It construct tree like stature of web page to understand it's foundation.
+              </p>
+            </div>
         </div>
-        <div class="h-36 rounded-lg h-boder p-5 mt-3 ">
-            <h2 class="text-xl font-bold mb-3">How do you select an element from the DOM?</h2>
-            <h4>What is the Document Object Model (DOM)?</h4>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>There are several ways to select an element from the DOM: <br><br>
+
+                Finding HTML elements by id >    document.getElementById("id"); <br>
+                Finding HTML elements by tag name >     document.getElementsByTagName("p"); <br>
+                Finding HTML elements by class name >      document.getElementsByClassName("intro"); <br>
+                Finding HTML elements by CSS selectors >     document.querySelectorAll("p.intro"); <br>
+                Finding HTML elements by HTML object collection >     document.forms["frm1"];
+            </p>
+            </div>
         </div>
-        <div class="h-36 rounded-lg h-boder p-5 mt-3 ">
-            <h2 class="text-xl font-bold mb-3">What is event delegation in the context of the DOM, and why is it useful?</h2>
-            <h4>What is the Document Object Model (DOM)?</h4>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element 
+                on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
+            </div>
         </div>
-        <div class="h-36 rounded-lg h-boder p-5 mt-3 ">
-            <h2 class="text-xl font-bold mb-3">How do you manipulate an element's attributes and styles using the DOM?</h2>
-            <h4>What is the Document Object Model (DOM)?</h4>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>Changing an element's style (CSS) attributes is one of the ways in which the DOM can be used. For example, in the code below, the onfocus event handler
+                 method is used to change the < input> element's style when the user clicks inside it. When this event occurs, the element's background color will change to purple.</p>
+            </div>
         </div>
+        
     </main>
     <footer></footer>
 </body>
