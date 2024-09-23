@@ -16,11 +16,12 @@ function transactionValidation(myAccountBalance, transferAmount){
 }
 function transactionProcess(donationForNoakhali, myAccountBalance, noakhaliWalet, donatePlace,historyPlace){
     if(donateValidation(donationForNoakhali)){
-        // modal.showModal()
+        
         if(transactionValidation(myAccountBalance, donationForNoakhali)){
             document.getElementById("myAccountBalance").innerHTML = myAccountBalance - donationForNoakhali
             document.getElementById(donatePlace).innerHTML = noakhaliWalet + donationForNoakhali
             transactionHistory(donationForNoakhali, historyPlace)
+            document.getElementById('modal').showModal();
         }
         else{
             alert("Insufficient Balance")
@@ -46,4 +47,4 @@ function transactionHistory(amountHistory, historyPlace) {
       `;
   
     historyMain.appendChild(newTransactionHistory);
-  }
+}

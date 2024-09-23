@@ -43,3 +43,7 @@ document.getElementById("donetToQuata").addEventListener('click', function(event
     const historyPlace = "Aid for Injured in the Quota Movement"
     transactionProcess(donationForQuata, myAccountBalance, quataWalet, donatePlace, historyPlace)
 })
+document.getElementById('modalForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    document.getElementById('modal').close(); // Close the modal
+});
